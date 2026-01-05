@@ -13,7 +13,26 @@ on:
       - completed
 
 jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    outputs:
+      updater_token: ${{ steps.set-output.outputs.updater_token }}
+    steps:
+      - name: 🔐 Load 1Password secrets
+        id: load-op
+        uses: 1password/load-secrets-action@8d0d610af187e78a2772c2d18d627f4c52d3fbfb
+        with:
+          export-env: true
+        env:
+          OP_SERVICE_ACCOUNT_TOKEN: ${{ secrets.OP_SERVICE_ACCOUNT_TOKEN }}
+          KEY: "op://CI/Github Token/Anmeldedaten"
+
+      - name: Set job output from KEY
+        id: set-output
+        run: |
+          echo "token=${KEY}" >> $GITHUB_OUTPUT
   workflows:
+    needs: prepare
     uses: homeassistant-apps/workflows/.github/workflows/addon-deploy.yaml@main
     secrets:
-      DISPATCH_TOKEN: ${{ secrets.PAT_BRENNER_BOT }}
+      DISPATCH_TOKEN: ${{ needs.prepare.outputs.token }}
