@@ -3,13 +3,9 @@
 [![GitHub Release][releases-shield]][releases]
 ![Project Stage][project-stage-shield]
 [![License][license-shield]](LICENSE.md)
-![Reported Installations][installations-shield-stable]
 
 ![Supports aarch64 Architecture][aarch64-shield]
 ![Supports amd64 Architecture][amd64-shield]
-![Supports armhf Architecture][armhf-shield]
-![Supports armv7 Architecture][armv7-shield]
-![Supports i386 Architecture][i386-shield]
 
 [![Github Actions][github-actions-shield]][github-actions]
 ![Project Maintenance][maintenance-shield]
@@ -46,28 +42,22 @@ with the following additional features:
 - Material Design icons pre-installed
 - Cron installed and configured
 - Tailscale installed
-- Cloudflared installed
 - Rclone installed
 - Custom cont-init.d and services.d scripts
 
 [aarch64-shield]: https://img.shields.io/badge/aarch64-no-red.svg
 [amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
-[armhf-shield]: https://img.shields.io/badge/armhf-no-red.svg
-[armv7-shield]: https://img.shields.io/badge/armv7-no-red.svg
-[i386-shield]: https://img.shields.io/badge/i386-no-red.svg
-[commits-shield]: https://img.shields.io/github/commit-activity/y/homeassistant-apps/app-code-server.svg
-[commits]: https://github.com/homeassistant-apps/app-code-server/commits/main
-[docs]: https://github.com/homeassistant-apps/app-code-server/blob/main/code-server/DOCS.md
-[github-actions-shield]: https://github.com/homeassistant-apps/app-code-server/workflows/CI/badge.svg
-[github-actions]: https://github.com/homeassistant-apps/app-code-server/actions
-[license-shield]: https://img.shields.io/github/license/homeassistant-apps/app-code-server.svg
-[maintenance-shield]: https://img.shields.io/maintenance/yes/2025.svg
-[releases-shield]: https://img.shields.io/github/release/homeassistant-apps/app-code-server.svg
-[releases]: https://github.com/homeassistant-apps/app-code-server/releases
+[commits-shield]: https://img.shields.io/github/commit-activity/y/elcajon/app-code-server.svg
+[commits]: https://github.com/elcajon/app-code-server/commits/main
+[docs]: https://github.com/elcajon/app-code-server/blob/main/code-server/DOCS.md
+[github-actions-shield]: https://github.com/elcajon/app-code-server/workflows/CI/badge.svg
+[github-actions]: https://github.com/elcajon/app-code-server/actions
+[license-shield]: https://img.shields.io/github/license/elcajon/app-code-server.svg
+[maintenance-shield]: https://img.shields.io/maintenance/yes/2026.svg
+[releases-shield]: https://img.shields.io/github/release/elcajon/app-code-server.svg
+[releases]: https://github.com/elcajon/app-code-server/releases
 [project-stage-shield]: https://img.shields.io/badge/project%20stage-production%20ready-brightgreen.svg
 [hassio-addons]: https://github.com/hassio-addons/addon-vscode
 [my-ha-badge]: https://my.home-assistant.io/badges/supervisor_add_addon_repository.svg
-[my-ha-url]: https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%2Fhomeassistant-apps%2Frepository
-[ha-addons]: https://github.com/homeassistant-apps/repository
-[installations-shield-stable]: https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fanalytics.home-assistant.io%2Faddons.json&query=%24%5B%22a03729f7_code-server%22%5D.total&label=Reported%20Installations&link=https%3A%2F%2Fanalytics.home-assistant.io/add-ons
-[installations-shield-edge]: https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fanalytics.home-assistant.io%2Faddons.json&query=%24%5B%22dca9deef_code-server%22%5D.total&label=Reported%20Installations&link=https%3A%2F%2Fanalytics.home-assistant.io/add-ons
+[my-ha-url]: https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%2Felcajon%2Fha-repository-edge
+[ha-addons]: https://github.com/elcajon/ha-repository-edge
